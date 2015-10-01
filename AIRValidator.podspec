@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
   s.author = { 'Yuki Nagai' => 'ynagai@r.recruit.co.jp' }
   s.license = 'Apache License, Version 2.0'
   s.source = { :git => 'https://github.com/recruit-lifestyle/AIRValidator.git', :tag => s.version }
-  s.source_files = 'AIRValidator/*.swift'
+  s.source_files = 'AIRValidator/**/*.swift'
   s.requires_arc = true
 end
