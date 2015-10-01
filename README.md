@@ -38,8 +38,8 @@ public struct RequiredRule: Rule {
 ```
 
 ## Requirements
-iOS8.0+
-Xcode7.0+
+* iOS8.0+
+* Xcode7.0+
 
 ## Installation
 ### CococaPods
