@@ -37,11 +37,20 @@ public struct RequiredRule: Rule {
 }
 ```
 
+## Requirements
+iOS8.0+
+Xcode7.0+
+
 ## Installation
-### CocoaPods
+### CococaPods
 
 ```ruby
-pod 'AIRValidator'
+pod 'AIRTimer'
+```
+
+### Carthage
+```
+github "recruit-lifestyle/AIRTimer"
 ```
 
 ## Credit
