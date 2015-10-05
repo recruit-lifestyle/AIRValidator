@@ -75,9 +75,9 @@
 		AA66E15B1B94395400E857E2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AAE65A1B1B944FD4002E1E0F /* Int.swift */,
 				AA66E15C1B94398100E857E2 /* String.swift */,
 				AAE65A191B944F1F002E1E0F /* Validatable.swift */,
-				AAE65A1B1B944FD4002E1E0F /* Int.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -125,10 +125,10 @@
 		AAE65A0C1B9436C5002E1E0F /* Rules */ = {
 			isa = PBXGroup;
 			children = (
+				AA06B5281BC24DE40049FE14 /* MaximumLengthRule.swift */,
+				AA06B5261BC24DDC0049FE14 /* MinimumLengthRule.swift */,
 				AAE65A0D1B943D02002E1E0F /* RequiredRule.swift */,
 				AAE65A111B943D90002E1E0F /* Rule.swift */,
-				AA06B5261BC24DDC0049FE14 /* MinimumLengthRule.swift */,
-				AA06B5281BC24DE40049FE14 /* MaximumLengthRule.swift */,
 			);
 			path = Rules;
 			sourceTree = "<group>";
@@ -136,9 +136,9 @@
 		AAE65A1F1B9457F7002E1E0F /* Rules */ = {
 			isa = PBXGroup;
 			children = (
-				AAE65A221B945845002E1E0F /* RequiredRuleTests.swift */,
-				AA06B52A1BC24F7E0049FE14 /* MinimumLengthRuleTests.swift */,
 				AA06B52C1BC24F890049FE14 /* MaximumLengthRuleTests.swift */,
+				AA06B52A1BC24F7E0049FE14 /* MinimumLengthRuleTests.swift */,
+				AAE65A221B945845002E1E0F /* RequiredRuleTests.swift */,
 			);
 			path = Rules;
 			sourceTree = "<group>";
