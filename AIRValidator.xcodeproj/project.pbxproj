@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA06B5271BC24DDC0049FE14 /* MinimumLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06B5261BC24DDC0049FE14 /* MinimumLengthRule.swift */; settings = {ASSET_TAGS = (); }; };
+		AA06B5291BC24DE40049FE14 /* MaximumLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06B5281BC24DE40049FE14 /* MaximumLengthRule.swift */; settings = {ASSET_TAGS = (); }; };
+		AA06B52B1BC24F7E0049FE14 /* MinimumLengthRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06B52A1BC24F7E0049FE14 /* MinimumLengthRuleTests.swift */; settings = {ASSET_TAGS = (); }; };
+		AA06B52D1BC24F890049FE14 /* MaximumLengthRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06B52C1BC24F890049FE14 /* MaximumLengthRuleTests.swift */; settings = {ASSET_TAGS = (); }; };
 		AA66E15D1B94398100E857E2 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA66E15C1B94398100E857E2 /* String.swift */; };
 		AABC2CFD1B954BD200BC10DA /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC2CFC1B954BD200BC10DA /* Result.swift */; settings = {ASSET_TAGS = (); }; };
 		AAE659F41B942FAE002E1E0F /* AIRValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE659F31B942FAE002E1E0F /* AIRValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA06B5261BC24DDC0049FE14 /* MinimumLengthRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimumLengthRule.swift; sourceTree = "<group>"; };
+		AA06B5281BC24DE40049FE14 /* MaximumLengthRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaximumLengthRule.swift; sourceTree = "<group>"; };
+		AA06B52A1BC24F7E0049FE14 /* MinimumLengthRuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimumLengthRuleTests.swift; sourceTree = "<group>"; };
+		AA06B52C1BC24F890049FE14 /* MaximumLengthRuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaximumLengthRuleTests.swift; sourceTree = "<group>"; };
 		AA66E15C1B94398100E857E2 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		AABC2CFC1B954BD200BC10DA /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		AAE659F01B942FAE002E1E0F /* AIRValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AIRValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +127,8 @@
 			children = (
 				AAE65A0D1B943D02002E1E0F /* RequiredRule.swift */,
 				AAE65A111B943D90002E1E0F /* Rule.swift */,
+				AA06B5261BC24DDC0049FE14 /* MinimumLengthRule.swift */,
+				AA06B5281BC24DE40049FE14 /* MaximumLengthRule.swift */,
 			);
 			path = Rules;
 			sourceTree = "<group>";
@@ -127,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				AAE65A221B945845002E1E0F /* RequiredRuleTests.swift */,
+				AA06B52A1BC24F7E0049FE14 /* MinimumLengthRuleTests.swift */,
+				AA06B52C1BC24F890049FE14 /* MaximumLengthRuleTests.swift */,
 			);
 			path = Rules;
 			sourceTree = "<group>";
@@ -241,9 +253,11 @@
 			files = (
 				AAE65A0E1B943D02002E1E0F /* RequiredRule.swift in Sources */,
 				AAE65A121B943D90002E1E0F /* Rule.swift in Sources */,
+				AA06B5291BC24DE40049FE14 /* MaximumLengthRule.swift in Sources */,
 				AA66E15D1B94398100E857E2 /* String.swift in Sources */,
 				AABC2CFD1B954BD200BC10DA /* Result.swift in Sources */,
 				AAE65A1A1B944F1F002E1E0F /* Validatable.swift in Sources */,
+				AA06B5271BC24DDC0049FE14 /* MinimumLengthRule.swift in Sources */,
 				AAE65A1C1B944FD4002E1E0F /* Int.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +268,8 @@
 			files = (
 				AAE65A231B945845002E1E0F /* RequiredRuleTests.swift in Sources */,
 				AAE65A001B942FAE002E1E0F /* AIRValidatorTests.swift in Sources */,
+				AA06B52D1BC24F890049FE14 /* MaximumLengthRuleTests.swift in Sources */,
+				AA06B52B1BC24F7E0049FE14 /* MinimumLengthRuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
