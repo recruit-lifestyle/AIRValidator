@@ -9,6 +9,9 @@
 import Foundation
 
 public struct RequiredRule: Rule {
+    public init() {
+    }
+    
     public func validate<T>(value: T) -> Bool {
         switch value {
         case let value as String:
