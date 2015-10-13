@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'AIRValidator'
-  s.version = '1.0.0'
+  s.version = ‘1.0.1’
   s.summary = 'Extendable, rule-based validator for Swift.'
   s.homepage = 'https://github.com/recruit-lifestyle/AIRValidator'
   s.platform = :ios, '8.0'
