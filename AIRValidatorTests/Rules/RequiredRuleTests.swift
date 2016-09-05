@@ -23,34 +23,40 @@ class RequiredRuleTests: XCTestCase {
     
     
     func testThatAnEmptyStringThrowsError() {
-        let value = ""
-        switch value.validate([RequiredRule()]) {
-        case .Valid:
-            XCTFail("Should be invalid")
-        case .Invalid(let rules):
-            XCTAssert(rules.count == 1)
-            XCTAssert(rules[0] is RequiredRule)
+        measureBlock {
+            let value = ""
+            switch value.validate([RequiredRule()]) {
+            case .Valid:
+                XCTFail("Should be invalid")
+            case .Invalid(let rules):
+                XCTAssert(rules.count == 1)
+                XCTAssert(rules[0] is RequiredRule)
+            }
         }
     }
 
     func testThatNonEmptyStringDoesNotThrowError() {
-        let value = "valid string"
-        switch value.validate([RequiredRule()]) {
-        case .Valid:
-            XCTAssert(true)
-        case .Invalid(_):
-            XCTFail("Should be valid")
+        measureBlock {
+            let value = "valid string"
+            switch value.validate([RequiredRule()]) {
+            case .Valid:
+                XCTAssert(true)
+            case .Invalid(_):
+                XCTFail("Should be valid")
+            }
         }
     }
     
     func testThatIntegerThrowsError() {
-        let value = 1
-        switch value.validate([RequiredRule()]) {
-        case .Valid:
-            XCTFail("Should be invalid")
-        case .Invalid(let rules):
-            XCTAssert(rules.count == 1)
-            XCTAssert(rules[0] is RequiredRule)
+        measureBlock {
+            let value = 1
+            switch value.validate([RequiredRule()]) {
+            case .Valid:
+                XCTFail("Should be invalid")
+            case .Invalid(let rules):
+                XCTAssert(rules.count == 1)
+                XCTAssert(rules[0] is RequiredRule)
+            }
         }
     }
 }
