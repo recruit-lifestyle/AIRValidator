@@ -27,7 +27,7 @@ public protocol Validatable {
 }
 
 extension Validatable {
-    public func validate(rules: [Rule]) -> Result {
+    public func validate(_ rules: [Rule]) -> Result {
         var errors = [Rule]()
         for rule in rules {
             if !rule.validate(self) {
@@ -35,8 +35,8 @@ extension Validatable {
             }
         }
         if errors.isEmpty {
-            return Result.Valid
+            return Result.valid
         }
-        return Result.Invalid(errors)
+        return Result.invalid(errors)
     }
 }

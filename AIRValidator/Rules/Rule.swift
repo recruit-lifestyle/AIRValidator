@@ -30,5 +30,5 @@ struct SampleRule: Rule {
 ```
 */
 public protocol Rule {
-    func validate<T>(value: T) -> Bool
+    func validate<T>(_ value: T) -> Bool
 }

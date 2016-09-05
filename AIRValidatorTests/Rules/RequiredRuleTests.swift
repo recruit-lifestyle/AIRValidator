@@ -23,12 +23,12 @@ class RequiredRuleTests: XCTestCase {
     
     
     func testThatAnEmptyStringThrowsError() {
-        measureBlock {
+        measure {
             let value = ""
             switch value.validate([RequiredRule()]) {
-            case .Valid:
+            case .valid:
                 XCTFail("Should be invalid")
-            case .Invalid(let rules):
+            case .invalid(let rules):
                 XCTAssert(rules.count == 1)
                 XCTAssert(rules[0] is RequiredRule)
             }
@@ -36,24 +36,24 @@ class RequiredRuleTests: XCTestCase {
     }
 
     func testThatNonEmptyStringDoesNotThrowError() {
-        measureBlock {
+        measure {
             let value = "valid string"
             switch value.validate([RequiredRule()]) {
-            case .Valid:
+            case .valid:
                 XCTAssert(true)
-            case .Invalid(_):
+            case .invalid(_):
                 XCTFail("Should be valid")
             }
         }
     }
     
     func testThatIntegerThrowsError() {
-        measureBlock {
+        measure {
             let value = 1
             switch value.validate([RequiredRule()]) {
-            case .Valid:
+            case .valid:
                 XCTFail("Should be invalid")
-            case .Invalid(let rules):
+            case .invalid(let rules):
                 XCTAssert(rules.count == 1)
                 XCTAssert(rules[0] is RequiredRule)
             }

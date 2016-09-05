@@ -9,6 +9,6 @@
 import Foundation
 
 public enum Result {
-    case Valid
-    case Invalid([Rule])
+    case valid
+    case invalid([Rule])
 }

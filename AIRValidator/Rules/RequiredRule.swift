@@ -12,7 +12,7 @@ public struct RequiredRule: Rule {
     public init() {
     }
     
-    public func validate<T>(value: T) -> Bool {
+    public func validate<T>(_ value: T) -> Bool {
         switch value {
         case let value as String:
             return !value.isEmpty

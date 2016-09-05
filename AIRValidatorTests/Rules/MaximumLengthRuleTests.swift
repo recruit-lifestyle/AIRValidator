@@ -22,24 +22,24 @@ class MaximumLengthRuleTests: XCTestCase {
     }
 
     func testValid() {
-        measureBlock {
+        measure {
             let value = "ABCDE"
             switch value.validate([MaximumLengthRule(5)]) {
-            case .Valid:
+            case .valid:
                 break
-            case .Invalid(_):
+            case .invalid(_):
                 XCTFail("should be valid")
             }
         }
     }
     
     func testInvalid() {
-        measureBlock {
+        measure {
             let value = "ABCDE"
             switch value.validate([MaximumLengthRule(4)]) {
-            case .Valid:
+            case .valid:
                 XCTFail("should be invalid")
-            case .Invalid(let rules):
+            case .invalid(let rules):
                 XCTAssertEqual(rules.count, 1)
                 XCTAssertTrue(rules[0] is MaximumLengthRule)
             }

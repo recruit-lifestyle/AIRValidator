@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA06B5271BC24DDC0049FE14 /* MinimumLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06B5261BC24DDC0049FE14 /* MinimumLengthRule.swift */; settings = {ASSET_TAGS = (); }; };
-		AA06B5291BC24DE40049FE14 /* MaximumLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06B5281BC24DE40049FE14 /* MaximumLengthRule.swift */; settings = {ASSET_TAGS = (); }; };
-		AA06B52B1BC24F7E0049FE14 /* MinimumLengthRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06B52A1BC24F7E0049FE14 /* MinimumLengthRuleTests.swift */; settings = {ASSET_TAGS = (); }; };
-		AA06B52D1BC24F890049FE14 /* MaximumLengthRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06B52C1BC24F890049FE14 /* MaximumLengthRuleTests.swift */; settings = {ASSET_TAGS = (); }; };
+		AA06B5271BC24DDC0049FE14 /* MinimumLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06B5261BC24DDC0049FE14 /* MinimumLengthRule.swift */; };
+		AA06B5291BC24DE40049FE14 /* MaximumLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06B5281BC24DE40049FE14 /* MaximumLengthRule.swift */; };
+		AA06B52B1BC24F7E0049FE14 /* MinimumLengthRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06B52A1BC24F7E0049FE14 /* MinimumLengthRuleTests.swift */; };
+		AA06B52D1BC24F890049FE14 /* MaximumLengthRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06B52C1BC24F890049FE14 /* MaximumLengthRuleTests.swift */; };
 		AA66E15D1B94398100E857E2 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA66E15C1B94398100E857E2 /* String.swift */; };
-		AABC2CFD1B954BD200BC10DA /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC2CFC1B954BD200BC10DA /* Result.swift */; settings = {ASSET_TAGS = (); }; };
+		AABC2CFD1B954BD200BC10DA /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC2CFC1B954BD200BC10DA /* Result.swift */; };
 		AAE659F41B942FAE002E1E0F /* AIRValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE659F31B942FAE002E1E0F /* AIRValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AAE659FB1B942FAE002E1E0F /* AIRValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE659F01B942FAE002E1E0F /* AIRValidator.framework */; };
 		AAE65A001B942FAE002E1E0F /* AIRValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE659FF1B942FAE002E1E0F /* AIRValidatorTests.swift */; };
-		AAE65A0E1B943D02002E1E0F /* RequiredRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE65A0D1B943D02002E1E0F /* RequiredRule.swift */; settings = {ASSET_TAGS = (); }; };
-		AAE65A121B943D90002E1E0F /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE65A111B943D90002E1E0F /* Rule.swift */; settings = {ASSET_TAGS = (); }; };
-		AAE65A1A1B944F1F002E1E0F /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE65A191B944F1F002E1E0F /* Validatable.swift */; settings = {ASSET_TAGS = (); }; };
-		AAE65A1C1B944FD4002E1E0F /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE65A1B1B944FD4002E1E0F /* Int.swift */; settings = {ASSET_TAGS = (); }; };
-		AAE65A231B945845002E1E0F /* RequiredRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE65A221B945845002E1E0F /* RequiredRuleTests.swift */; settings = {ASSET_TAGS = (); }; };
+		AAE65A0E1B943D02002E1E0F /* RequiredRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE65A0D1B943D02002E1E0F /* RequiredRule.swift */; };
+		AAE65A121B943D90002E1E0F /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE65A111B943D90002E1E0F /* Rule.swift */; };
+		AAE65A1A1B944F1F002E1E0F /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE65A191B944F1F002E1E0F /* Validatable.swift */; };
+		AAE65A1C1B944FD4002E1E0F /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE65A1B1B944FD4002E1E0F /* Int.swift */; };
+		AAE65A231B945845002E1E0F /* RequiredRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE65A221B945845002E1E0F /* RequiredRuleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,9 +205,11 @@
 				TargetAttributes = {
 					AAE659EF1B942FAE002E1E0F = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 					AAE659F91B942FAE002E1E0F = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -389,6 +391,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -407,6 +410,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.recruit-lifestyle.AIRValidator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -417,6 +421,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.recruit-lifestyle.AIRValidatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -427,6 +432,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.recruit-lifestyle.AIRValidatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

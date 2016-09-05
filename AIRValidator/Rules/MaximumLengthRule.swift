@@ -9,12 +9,12 @@
 import Foundation
 
 public struct MaximumLengthRule: Rule {
-    private let maximumLength: UInt
+    fileprivate let maximumLength: UInt
     public init(_ maximumLength: UInt) {
         self.maximumLength = maximumLength
     }
     
-    public func validate<T>(value: T) -> Bool {
+    public func validate<T>(_ value: T) -> Bool {
         switch value {
         case let value as String:
             return value.characters.count <= Int(maximumLength)
