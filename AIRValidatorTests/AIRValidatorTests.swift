@@ -2,8 +2,8 @@
 //  AIRValidatorTests.swift
 //  AIRValidatorTests
 //
-//  Created by Yuki Nagai on 8/31/15.
-//  Copyright © 2015 Recruit Lifestyle Co., Ltd. All rights reserved.
+//  Created by Yuki Nagai on 9/5/16.
+//  Copyright © 2016 Recruit Lifestyle Co., Ltd. All rights reserved.
 //
 
 import XCTest
