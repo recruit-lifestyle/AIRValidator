@@ -13,11 +13,7 @@ public struct RequiredRule: Rule {
     }
     
     public func validate<T>(_ value: T) -> Bool {
-        switch value {
-        case let value as String:
-            return !value.isEmpty
-        default:
-            return false
-        }
+        guard let value = value as? String else { return false }
+        return !value.isEmpty
     }
 }

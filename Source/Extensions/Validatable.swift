@@ -27,16 +27,23 @@ public protocol Validatable {
 }
 
 extension Validatable {
-    public func validate(_ rules: [Rule]) -> Result {
-        var errors = [Rule]()
-        for rule in rules {
-            if !rule.validate(self) {
-                errors.append(rule)
-            }
-        }
+    public func validate<T: Rule>(_ rules: [T]) -> Result {
+        let errors = rules.filter { !$0.validate(self) }
         if errors.isEmpty {
-            return Result.valid
+            return .valid
         }
-        return Result.invalid(errors)
+        return .invalid(errors)
     }
 }
+
+extension String: Validatable {}
+extension Int: Validatable {}
+extension Int8: Validatable {}
+extension Int16: Validatable {}
+extension Int32: Validatable {}
+extension Int64: Validatable {}
+extension UInt: Validatable {}
+extension UInt8: Validatable {}
+extension UInt16: Validatable {}
+extension UInt32: Validatable {}
+extension UInt64: Validatable {}

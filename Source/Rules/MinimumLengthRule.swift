@@ -9,17 +9,13 @@
 import Foundation
 
 public struct MinimumLengthRule: Rule {
-    fileprivate let minimumLength: UInt
-    public init(_ minimumLength: UInt) {
-        self.minimumLength = minimumLength
+    private let length: UInt
+    public init(_ length: UInt) {
+        self.length = length
     }
     
     public func validate<T>(_ value: T) -> Bool {
-        switch value {
-        case let value as String:
-            return value.characters.count >= Int(minimumLength)
-        default:
-            return false
-        }
+        guard let value = value as? String else { return false }
+        return value.characters.count >= Int(length)
     }
 }

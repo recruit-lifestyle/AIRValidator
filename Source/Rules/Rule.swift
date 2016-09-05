@@ -9,25 +9,25 @@
 import Foundation
 
 /**
-You can make custom rules by implementing this protocol.
-
-* [jpotts18/SwiftValidator](https://github.com/jpotts18/SwiftValidator)
-* [groue/GRValidation](https://github.com/groue/GRValidation)
-
-```swift
-struct SampleRule: Rule {
-    func validate<T>(value: T) -> Bool {
-        switch value {
-            case let value as String:
-                // handle supporting types
-                return value == "Sample String"
-            default:
-                // return false for unsupported types
-                return false
-        }
-    }
-}
-```
+ You can make custom rules by implementing this protocol.
+ 
+ * [jpotts18/SwiftValidator](https://github.com/jpotts18/SwiftValidator)
+ * [groue/GRValidation](https://github.com/groue/GRValidation)
+ 
+ ```swift
+ struct SampleRule: Rule {
+   func validate<T>(value: T) -> Bool {
+     switch value {
+     case let value as String:
+       // handle supporting types
+       return value == "Sample String"
+     default:
+       // return false for unsupported types
+       return false
+     }
+   }
+ }
+ ```
 */
 public protocol Rule {
     func validate<T>(_ value: T) -> Bool
