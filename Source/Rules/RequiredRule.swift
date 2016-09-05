@@ -12,12 +12,8 @@ public struct RequiredRule: Rule {
     public init() {
     }
     
-    public func validate<T>(value: T) -> Bool {
-        switch value {
-        case let value as String:
-            return !value.isEmpty
-        default:
-            return false
-        }
+    public func validate<T>(_ value: T) -> Bool {
+        guard let value = value as? String else { return false }
+        return !value.isEmpty
     }
 }

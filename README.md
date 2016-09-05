@@ -10,13 +10,13 @@ let value = "not empty"
 `validate` method:
 - parameter rules: Array of Rules.
 - returns: Result pattern
-  * Valid
-  * Invalid([Rule]): returns invalid rules
+  * valid
+  * invalid([Rule]): returns invalid rules
 */
 switch value.validate([RequiredRule()]) {
-case .Valid:
+case .valid:
   print('Valid')
-case .Invalid(let rules):
+case .invalid(let rules):
   print('Invalid for rules: \(rules)')
 }
 ```
@@ -30,8 +30,8 @@ public struct RequiredRule: Rule {
     case let value as String:
       return !value.isEmpty
     default:
-        // otherwise return false
-        return false
+      // otherwise return false
+      return false
     }
   }
 }
@@ -39,18 +39,13 @@ public struct RequiredRule: Rule {
 
 ## Requirements
 * iOS8.0+
-* Xcode7.0+
+* Xcode8.0+
 
 ## Installation
-### CococaPods
-
-```ruby
-pod 'AIRTimer'
-```
 
 ### Carthage
 ```
-github "recruit-lifestyle/AIRTimer"
+github "recruit-lifestyle/AIRValidator"
 ```
 
 ## Credit
