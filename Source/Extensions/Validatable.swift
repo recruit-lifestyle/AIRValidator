@@ -27,7 +27,7 @@ public protocol Validatable {
 }
 
 extension Validatable {
-    public func validate<T: Rule>(_ rules: [T]) -> Result {
+    public func validate(_ rules: [Rule]) -> Result {
         let errors = rules.filter { !$0.validate(self) }
         if errors.isEmpty {
             return .valid
